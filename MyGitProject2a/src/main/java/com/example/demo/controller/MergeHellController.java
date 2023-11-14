@@ -15,6 +15,6 @@ public class MergeHellController {
 
 		int c;
 		c = a + b;
-
+		System.out.println(c);
 	}
 }
