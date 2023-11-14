@@ -7,17 +7,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class HenkouController {
-	@RequestMapping(path = "/henkou1", method = RequestMethod.POST)
-	public String henkou1(Model model, String name, String price) {
-		model.addAttribute("name", name);
-		model.addAttribute("price", price);
+	@RequestMapping(path = "/henkou1", method = RequestMethod.GET)
+	public String henkou1() {
 		return "henkou1";
 	}
 
-	@RequestMapping(path = "/henkou2", method = RequestMethod.POST)
-	public String henkou2(Model model, String name, String price) {
-		System.out.println("変更後の名前は" + name);
-		System.out.println("変更後の値段は" + price);
+	@RequestMapping(path = "/henkou1", method = RequestMethod.POST)
+	public String henkou1Post(Model model, String name, String price, String img) {
+		model.addAttribute("name", name);
+		model.addAttribute("price", price);
+		model.addAttribute("img", img);
 		return "henkou2";
 	}
+
 }
