@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>henkou1</title>
+</head>
+<body>
+	<form th:action="@{/henkou1}" method="POST" >
+	<img th:src="@{img/gomi.jpg}"name="img" >
+	<p>商品名：ゴミ箱</p>
+	<p>値段：2000</p>	
+	<p>出品者：石橋</p>	
+        商品名：<input type="text" name="name"> <br>
+        値段：<input type="text" name="price"> <br>
+        <input type="submit">
+    </form>
+    <form th:action="@{/henkou1}" method="POST" >
+    <img th:src="@{img/kesi.jpg}" name="img">
+	<p>商品名：消しゴム</p>
+	<p>値段：100</p>
+	<p>出品者：石橋</p>	
+        商品名：<input type="text" name="name"> <br>
+        値段：<input type="text" name="price"> <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
