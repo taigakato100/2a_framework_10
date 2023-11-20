@@ -2,11 +2,12 @@ package com.example.demo.controller;
 
 public class MergeHellController {
 	public static void main(String[] args) {
-		kadaiA();
-		kadaiB();
+		//kadaiA();
+		//kadaiB();
 		kadaiC();
+	}
 
-	void kadaiC() {
+	static void kadaiC() {
 		int a;
 		a = 50;
 
